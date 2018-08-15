@@ -1,0 +1,8 @@
+<div *ngIf="beer">
+  <h2>{{beer.brand | uppercase}}: {{beer.name | uppercase}} Details</h2>
+  <div><span>price per ounce: {{beer.price}}</span></div>
+  <div><span>abv: {{beer.abv}}</span></div>
+  <div><span>capacity: {{beer.capacity}}</span></div>
+  <div><span>remaining: {{beer.remaining}}</span></div>
+  <div><span>discount: {{beer.discount}}</span></div>
+</div>

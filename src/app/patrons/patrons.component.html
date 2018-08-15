@@ -1,0 +1,7 @@
+<h2>Guest Beer View Doodad</h2>
+
+<p *ngFor="let beer of beers" (click)="onSelect(beer)">
+  <span class="badge">{{beer.brand}}</span> {{beer.name}} {{beer.price}}
+</p>
+
+<app-beers [beer]="selectedBeer"></app-beers>
