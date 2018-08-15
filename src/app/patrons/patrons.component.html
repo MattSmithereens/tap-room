@@ -1,7 +1,19 @@
-<h2>Guest Beer View Doodad</h2>
+<div class="jumbotron">
+  <h2>Guest Beer View Doodad</h2>
+</div>
+<div class="container"  *ngFor="let beer of beers" (click)="onSelect(beer)">
+  <div class="row">
+    <div class="col-md-2">
+      <span class="badge">{{beer.brand}}</span>
+    </div>
+    <div class="col-md-2">
+      <span class="badge">{{beer.name}}</span>
+    </div>
+    <div class="col-md-2">
+      <span class="badge">{{beer.price*16}}</span>
+    </div>
+  </div>
+</div>
 
-<p *ngFor="let beer of beers" (click)="onSelect(beer)">
-  <span class="badge">{{beer.brand}}</span> {{beer.name}} {{beer.price}}
-</p>
 
 <app-beers [beer]="selectedBeer"></app-beers>
