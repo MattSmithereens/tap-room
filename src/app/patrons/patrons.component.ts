@@ -9,10 +9,6 @@ import { BEERS } from '../mock-beers';
 })
 export class PatronsComponent implements OnInit {
 
-  beers = BEERS;
-
-  selectedBeer: Beer;
-
   constructor() { }
 
   ngOnInit() {
