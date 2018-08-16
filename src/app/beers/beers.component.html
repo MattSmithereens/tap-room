@@ -1,8 +1,56 @@
-<div *ngIf="beer">
-  <h2>{{beer.brand | uppercase}}: {{beer.name | uppercase}} Details</h2>
-  <div><span>price per ounce: {{beer.price}}</span></div>
-  <div><span>abv: {{beer.abv}}</span></div>
-  <div><span>capacity: {{beer.capacity}}</span></div>
-  <div><span>remaining: {{beer.remaining}}</span></div>
-  <div><span>discount: {{beer.discount}}</span></div>
+<div class="container selected">
+  <div class="row">
+    <div class="col-md-1">
+      <span>&nbsp;</span>
+    </div>
+    <div class="col-md-1">
+      <span class="title">Beer ID</span>
+    </div>
+    <div class="col-md-3">
+      <span class="title">Name</span>
+    </div>
+    <div class="col-md-3">
+      <span class="title">Brewery</span>
+    </div>
+    <div class="col-md-1">
+      <span class="title">Price / oz.</span>
+    </div>
+    <div class="col-md-1">
+      <span class="title">ABV</span>
+    </div>
+    <div class="col-md-1">
+      <span class="title">keg size</span>
+    </div>
+    <div class="col-md-1">
+      <span>&nbsp;</span>
+    </div>
+  </div>
+</div>
+<div class="container"  *ngIf="beer" (click)="onSelect(beer)">
+  <div class="row">
+    <div class="col-md-1">
+      <span>&nbsp;</span>
+    </div>
+    <div class="col-md-1">
+      <span>{{beer.id}}</span>
+    </div>
+    <div class="col-md-3">
+      <span>{{beer.name}}</span>
+    </div>
+    <div class="col-md-3">
+      <span>{{beer.brewery}}</span>
+    </div>
+    <div class="col-md-1">
+      <span>{{beer.price}}</span>
+    </div>
+    <div class="col-md-1">
+      <span>{{beer.abv}}</span>
+    </div>
+    <div class="col-md-1">
+      <span>{{beer.size}}</span>
+    </div>
+    <div class="col-md-1">
+      <span>&nbsp;</span>
+    </div>
+  </div>
 </div>

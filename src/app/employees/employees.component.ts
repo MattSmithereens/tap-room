@@ -1,4 +1,4 @@
-import { Component, OnInit, Form } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Beer } from '../beer';
 import { BEERS } from '../mock-beers';
@@ -28,7 +28,7 @@ export class EmployeesComponent implements OnInit {
 
   addItem() {
     let beerTempArray = [];
-    console.log(this.beerID this.beerName this.beerBrewery this.beerPrice this.beerABV this.beerSize);
+    // console.log(this.beerID this.beerName this.beerBrewery this.beerPrice this.beerABV this.beerSize);
     beerTempArray.push(this.beerID);
     beerTempArray.push(this.beerName);
     beerTempArray.push(this.beerBrewery);
